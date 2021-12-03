@@ -72,7 +72,9 @@ class LoginUserPage extends StatelessWidget {
                   width: 300.0,
                   height: 50.0,
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'tabs-user');
+                    },
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.0)),
                     color: Color.fromRGBO(133, 214, 121, 1.0),
@@ -85,6 +87,7 @@ class LoginUserPage extends StatelessWidget {
                     ),
                   ),
                 ),
+                Container(),
                 Container(
                   padding: EdgeInsets.only(top: 15),
                   alignment: Alignment.center,

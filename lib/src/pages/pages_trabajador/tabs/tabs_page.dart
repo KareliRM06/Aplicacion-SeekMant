@@ -1,20 +1,20 @@
-import 'package:aplication_seekmant/src/pages/pages_trabajador/tabs/home_tab.dart';
 import 'package:aplication_seekmant/src/pages/pages_trabajador/tabs/profile_tab.dart';
-import 'package:aplication_seekmant/src/pages/pages_trabajador/tabs/search_tab.dart';
+import 'package:aplication_seekmant/src/pages/pages_trabajador/tabs/agregar_tab.dart';
+import 'package:aplication_seekmant/src/pages/pages_trabajador/tabs/agendar_tab.dart';
 import 'package:flutter/material.dart';
 
-class TabsPage extends StatefulWidget {
-  TabsPage({Key? key}) : super(key: key);
+class TabsPageTrabajador extends StatefulWidget {
+  TabsPageTrabajador({Key? key}) : super(key: key);
 
   @override
-  _TabsPageState createState() => _TabsPageState();
+  _TabsPageTrabajadorState createState() => _TabsPageTrabajadorState();
 }
 
-class _TabsPageState extends State<TabsPage> {
+class _TabsPageTrabajadorState extends State<TabsPageTrabajador> {
   List<Widget> _widgetOptions = [
-    HomeTab(),
-    SearchTab(),
-    ProfileTab(),
+    AgregarTabTrab(),
+    AgendarTabTrab(),
+    ProfileTabTrab(),
   ];
 
   int _selectedItemIndex = 0;
@@ -42,10 +42,10 @@ class _TabsPageState extends State<TabsPage> {
         onTap: _cambiarWidget,
         //showSelectedLabels: true,
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Inicio'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Busqueda'),
+          BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Agregar'),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: 'Agendar'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_pin), label: 'Perfil'),
+              icon: Icon(Icons.person), label: 'Perfil'),
         ]);
   }
 }

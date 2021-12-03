@@ -6,6 +6,7 @@ import 'package:aplication_seekmant/src/pages/pages_trabajador/signin_trabajador
 import 'package:aplication_seekmant/src/widget/back_button.dart';
 
 class LoginTrabajadorPage extends StatelessWidget {
+  LoginTrabajadorPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
@@ -71,7 +72,7 @@ class LoginTrabajadorPage extends StatelessWidget {
                   height: 50.0,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, 'tabs');
+                      Navigator.pushNamed(context, 'tabs-trabajador');
                     },
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.0)),

@@ -5,6 +5,8 @@ import 'package:aplication_seekmant/src/widget/back_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
+import 'login_user_page.dart';
+
 class SignInUserPage extends StatelessWidget {
   SignInUserPage ({Key? key}) : super(key: key);
   @override
@@ -111,7 +113,7 @@ class SignInUserPage extends StatelessWidget {
                         child: FlatButton(
                           onPressed: () {
                              Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => LoginTrabajadorPage(),
+                        builder: (context) => LoginUserPage(),
                       ));
                           },
                           child: Text(
