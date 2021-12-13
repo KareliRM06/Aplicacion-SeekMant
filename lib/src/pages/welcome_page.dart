@@ -25,7 +25,7 @@ class WelcomePage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 25.0),
                 ),
-              ),
+              ),/*
               Container(
                 padding: EdgeInsets.only(top: 2),
                 //padding: EdgeInsets.symmetric(vertical: 20),
@@ -34,9 +34,9 @@ class WelcomePage extends StatelessWidget {
                   '¿Eres trabajador o usuario?',
                   style: TextStyle(color: Colors.grey, fontSize: 17.0),
                 ),
-              ),
+              ),*/
               SizedBox(height: 70),
-              Container(
+              /*Container(
                 width: 300.0,
                 height: 50.0,
                 child: RaisedButton(
@@ -64,7 +64,7 @@ class WelcomePage extends StatelessWidget {
                   '------------------- o -------------------',
                   style: TextStyle(color: Colors.grey[200], fontSize: 17.0),
                 ),
-              ),
+              ),*/
               SizedBox(height: 20),
               Container(
                 width: 300.0,

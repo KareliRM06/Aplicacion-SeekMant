@@ -78,7 +78,7 @@ class Body extends StatelessWidget {
                     ),
 
                     //Opciones
-                    SizedBox(height: 60),
+                    SizedBox(height: 80),
                     _opcionAcercaDe(),
                     SizedBox(height: 60),
                     _opcionCerrarSesion(),
